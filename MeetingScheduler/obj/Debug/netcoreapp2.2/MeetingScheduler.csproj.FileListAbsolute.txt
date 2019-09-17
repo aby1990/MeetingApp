@@ -1,0 +1,11 @@
+E:\WorkbenchVSCode\MeetingApp\MeetingScheduler\bin\Debug\netcoreapp2.2\MeetingScheduler.deps.json
+E:\WorkbenchVSCode\MeetingApp\MeetingScheduler\bin\Debug\netcoreapp2.2\MeetingScheduler.runtimeconfig.json
+E:\WorkbenchVSCode\MeetingApp\MeetingScheduler\bin\Debug\netcoreapp2.2\MeetingScheduler.runtimeconfig.dev.json
+E:\WorkbenchVSCode\MeetingApp\MeetingScheduler\bin\Debug\netcoreapp2.2\MeetingScheduler.dll
+E:\WorkbenchVSCode\MeetingApp\MeetingScheduler\bin\Debug\netcoreapp2.2\MeetingScheduler.pdb
+E:\WorkbenchVSCode\MeetingApp\MeetingScheduler\obj\Debug\netcoreapp2.2\MeetingScheduler.csprojAssemblyReference.cache
+E:\WorkbenchVSCode\MeetingApp\MeetingScheduler\obj\Debug\netcoreapp2.2\MeetingScheduler.csproj.CoreCompileInputs.cache
+E:\WorkbenchVSCode\MeetingApp\MeetingScheduler\obj\Debug\netcoreapp2.2\MeetingScheduler.AssemblyInfoInputs.cache
+E:\WorkbenchVSCode\MeetingApp\MeetingScheduler\obj\Debug\netcoreapp2.2\MeetingScheduler.AssemblyInfo.cs
+E:\WorkbenchVSCode\MeetingApp\MeetingScheduler\obj\Debug\netcoreapp2.2\MeetingScheduler.dll
+E:\WorkbenchVSCode\MeetingApp\MeetingScheduler\obj\Debug\netcoreapp2.2\MeetingScheduler.pdb
