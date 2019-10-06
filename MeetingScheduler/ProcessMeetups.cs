@@ -14,7 +14,7 @@ namespace MeetingScheduler
         /// Verify and then print finalised meetups
         /// </summary>
         /// <param name="input"></param>
-        public void GetBookedMeetups(List<string> input)
+        public void GetBookedMeetups(IEnumerable<string> input)
         {
             IEnumerable<Meetup> meetList = _planMeetup.GetValidMeetups(input);
             FinalMeetings(meetList);

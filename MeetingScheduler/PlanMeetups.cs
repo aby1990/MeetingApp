@@ -19,14 +19,14 @@ namespace MeetingScheduler
         /// </summary>
         /// <param name="inputMeetup"></param>
         /// <returns> IEnumerable </returns>
-        public IEnumerable<Meetup> GetValidMeetups(List<string> inputMeetup)
+        public IEnumerable<Meetup> GetValidMeetups(IEnumerable<string> inputMeetup)
         {
             SortedList<DateTime, Meetup> sortList = new SortedList<DateTime, Meetup>();
             Meetup objMeetup = null;
             DateTime bookingDate;
-            OfficeHours officeHours = GetOfficeHours(inputMeetup[0]);
+            OfficeHours officeHours = GetOfficeHours(inputMeetup.ElementAt(0));
 
-            foreach (var meet in TransformInputMeetups(inputMeetup))
+            foreach (var meet in TransformInputMeetups(inputMeetup.ToList()))
             {
                 objMeetup = GetAppliedMeetups(meet, out bookingDate);
                 if (objMeetup == new Meetup())
