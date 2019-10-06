@@ -26,7 +26,7 @@ namespace MeetingScheduler
             DateTime bookingDate;
             OfficeHours officeHours = GetOfficeHours(inputMeetup.ElementAt(0));
 
-            foreach (var meet in TransformInputMeetups(inputMeetup.ToList()))
+            foreach (var meet in TransformInputMeetups(inputMeetup))
             {
                 objMeetup = GetAppliedMeetups(meet, out bookingDate);
                 if (objMeetup == new Meetup())
@@ -66,14 +66,14 @@ namespace MeetingScheduler
         /// <param name="_meetupInput"></param>
         /// <returns>IEnumerable</returns>
 
-        public IEnumerable<string> TransformInputMeetups(List<string> _meetupInput)
+        public IEnumerable<string> TransformInputMeetups(IEnumerable<string> _meetupInput)
         {
             List<string> finalText = new List<string>();
             try
             {
-                for (int i = 1; i < _meetupInput.Count; i = i + 2)
+                for (int i = 1; i < _meetupInput.Count(); i = i + 2)
                 {
-                    finalText.Add($"{_meetupInput[i]} {_meetupInput[i + 1]}");
+                    finalText.Add($"{_meetupInput.ElementAt(i)} {_meetupInput.ElementAt(i + 1)}");
                 }
                 return finalText;
             }
