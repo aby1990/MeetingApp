@@ -20,7 +20,7 @@ namespace MeetingScheduler
             var logger = serviceProvider.GetService<ILoggerFactory>().CreateLogger<Program>();
             
             //read file for input and keeping it in list of strings
-            var inputMeetups = File.ReadAllLines("input.txt").SelectMany(line => line.Split("\n")).ToList();
+            var inputMeetups = File.ReadAllLines("input.txt").SelectMany(line => line.Split("\n")).AsEnumerable();
 
             var procMeetups = serviceProvider.GetService<IProcessMeetups>();
             procMeetups.GetBookedMeetups(inputMeetups);

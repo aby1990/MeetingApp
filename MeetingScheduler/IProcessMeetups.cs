@@ -5,7 +5,7 @@ namespace MeetingScheduler
 
     public interface IProcessMeetups
     {
-        void GetBookedMeetups(List<string> input);
+        void GetBookedMeetups(IEnumerable<string> input);
         void FinalMeetings(IEnumerable<Meetup> meetList);
 
     }
