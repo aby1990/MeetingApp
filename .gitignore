@@ -42,6 +42,9 @@ _ReSharper*/
 #Subversion files
 .svn
 
+*/obj/*
+*/bin/*
+
 # Offi
 *.cache
 MeetingScheduler/obj/Debug/netcoreapp2.2/MeetingScheduler.assets.cache
